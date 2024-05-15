@@ -6,11 +6,39 @@
     <!-- General Style -->
     <link rel="stylesheet" href="./styles/style.css">
 
-    <title>Document</title>
+    <title>Music Player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    
+    <div class="music-container" id="music-container">
+        <div class="album-cover" id="album-cover">
+            <img src="./images/Dili-me-Jigarlar.jpg" alt="Album Cover" class="album-cover-image" id="album-cover-image">
+        </div>
+        <div class="progress-and-time-container" id="progress-and-time-container">
+            <div class="progress" id="progress">
+                <div class="progress-container" id="progress-container"></div>
+            </div>
+            <div class="time-container" id="time-container">
+                <span>00:00</span>
+                <span>00:00</span>
+            </div>
+        </div>
+        <div class="music-info-and-controller" id="music-info-and-controller">
+            <h2 class="title" id="title">Dili-me-Jigarlar</h2>
+            <div class="controls" id="controls">
+                <button class="btn" id="backward">
+                    <i class="fa-solid fa-backward-fast"></i>
+                </button>
+                <button class="btn btn-big" id="play">
+                    <i class="fa-solid fa-play"></i>
+                </button>
+                <button class="btn" id="forward">
+                    <i class="fa-solid fa-forward-fast"></i>
+                </button>
+            </div>
+        </div>
+    </div>
 
-    <script src="./js/index.js"></script>
+    <script type="module" src="./js/index.js"></script>
 </body>
 </html>
