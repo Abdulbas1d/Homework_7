@@ -74,9 +74,10 @@ body{
 }
 .progress-container {
     background-color: tomato;
-    width: 50%;
+    width: 0%;
     height: inherit;
     border-radius: inherit;
+    transition: width 0.3s ease;
 }
 .time-container {
     display: flex;
