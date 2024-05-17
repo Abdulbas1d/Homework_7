@@ -79,10 +79,11 @@ const progress = (e) => {
     progressContainerEl.style.width = `${widthTime}%`;
 };
 
-const progressChange = (e) => {
-    const {duration} = audioEl;
-    const clientX = e.clientX;
-    const progressWidth = e.target
+const progressChange = function (e) {
+    const width = this.clientWidth;
+    const clickX = e.clientX;
+
+    audioEl.currentTime = clickX / width * audioEl.duration;
 }
 
 playBtn.addEventListener("click", playSong);
